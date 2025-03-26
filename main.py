@@ -65,6 +65,7 @@ async def generate(request: GenerateRequest):
 async def health_check():
     return {"status": "healthy"}
 
+# For local development
 if __name__ == "__main__":
     import uvicorn
     port = int(os.environ.get("PORT", 8000))

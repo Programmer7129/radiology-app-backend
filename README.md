@@ -28,7 +28,7 @@ python main.py
 2. Connect your GitHub repository
 3. Configure the service:
    - Build Command: `pip install -r requirements.txt`
-   - Start Command: `python main.py`
+   - Start Command: `gunicorn main:app`
    - Environment Variables:
      - `PORT`: 8000 (or let Render set it automatically)
 
